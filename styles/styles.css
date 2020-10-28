@@ -1,5 +1,5 @@
 body {
-    width: 100%v;
+    width: 100%;
     color: #444444;
 }
 
@@ -321,6 +321,12 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center center;
     background-attachment: fixed;
     background-image: url("https://avante.biz/wp-content/uploads/Black-White-Wallpaper/Black-White-Wallpaper-035.jpg");
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        padding: 0;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -674,22 +680,27 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media screen and (max-width: 768px) {
+
+    .container{
+        max-width: 100%;
+    }
     .nav-menu.responsive {
         visibility: visible;
         position: fixed;
         flex-direction: column;
+        width: 100%;
     }
    
     .nav-menu.responsive ul{
         visibility: visible;
         position: absolute;
-        height: 90vh;
-        width: 250px;
-        top: 10vh;
+        height: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: auto;
+        background-color: black;
         
     }
 

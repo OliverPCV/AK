@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  var $container2 = $(".container2");
+    if ($(document).scrollTop() > $container2.height()) {
+      var $nav = $("#header");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+    }
   $(window).scroll(function () {
     var $container2 = $(".container2");
     if ($(document).scrollTop() > $container2.height()) {
