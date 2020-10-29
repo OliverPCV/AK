@@ -1,17 +1,17 @@
 $(document).ready(function () {
-  var $container2 = $(".container2");
-    if ($(document).scrollTop() > $container2.height()) {
+  var $mainimage = $(".main-image");
+    if ($(document).scrollTop() > $mainimage.height()) {
       var $nav = $("#header");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 
     }
   $(window).scroll(function () {
-    var $container2 = $(".container2");
-    if ($(document).scrollTop() > $container2.height()) {
+    var $mainimage = $(".main-image");
+    if ($(document).scrollTop() > $mainimage.height()) {
       var $nav = $("#header");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 
-    } else if (($(document).scrollTop() < $container2.height())) {
+    } else if (($(document).scrollTop() < $mainimage.height())) {
       header.classList.remove("scrolled");
       $nav.toggleClass('hovno', $(this).scrollTop() < $nav.height());
     }
@@ -20,11 +20,7 @@ $(document).ready(function () {
 
 function myFunction() {
   var x = document.getElementById("myNav");
-  if (x.className === "nav-menu") {
-      x.className += " responsive";
-  } else {
-      x.className = "nav-menu";
-  }
+  x.classList.toggle("responsive");
 }
 
 /*const navSlide = () => {
