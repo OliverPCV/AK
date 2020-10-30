@@ -136,7 +136,14 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 
+.container{
+    margin-right: 0;
+}
 
+.nav-menu{
+    writing-mode: vertical-rl;
+    width: 100%;
+}
 .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -308,6 +315,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* container */
+
+
 .main-image{
     height: 100vh;
     width: 100%;
@@ -378,7 +387,8 @@ h1, h2, h3, h4, h5, h6 {
   nav respons
   
   */
-  .navTrigger {
+  #navTrigger
+ {
     cursor: pointer;
     width: 30px;
     height: 25px;
@@ -389,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
 }
 
-.navTrigger i {
+#navTrigger i {
     background-color: #3E70B1;
     border-radius: 2px;
     content: '';
@@ -398,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 4px;
 }
 
-.navTrigger i:nth-child(1) {
+#navTrigger i:nth-child(1) {
     -webkit-animation: outT 0.8s backwards;
     animation: outT 0.8s backwards;
     -webkit-animation-direction: reverse;
@@ -407,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.navTrigger i:nth-child(2) {
+#navTrigger i:nth-child(2) {
     margin: 5px 0;
     -webkit-animation: outM 0.8s backwards;
     animation: outM 0.8s backwards;
@@ -415,24 +425,24 @@ h1, h2, h3, h4, h5, h6 {
     animation-direction: reverse;
 }
 
-.navTrigger i:nth-child(3) {
+#navTrigger i:nth-child(3) {
     -webkit-animation: outBtm 0.8s backwards;
     animation: outBtm 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
 
-.navTrigger.active i:nth-child(1) {
+#navTrigger.active i:nth-child(1) {
     -webkit-animation: inT 0.8s forwards;
     animation: inT 0.8s forwards;
 }
 
-.navTrigger.active i:nth-child(2) {
+#navTrigger.active i:nth-child(2) {
     -webkit-animation: inM 0.8s forwards;
     animation: inM 0.8s forwards;
 }
 
-.navTrigger.active i:nth-child(3) {
+#navTrigger.active i:nth-child(3) {
     -webkit-animation: inBtm 0.8s forwards;
     animation: inBtm 0.8s forwards;
 }
@@ -600,7 +610,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.navTrigger {
+#navTrigger {
     display: none;
 }
 
@@ -613,10 +623,16 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 @media screen and (max-width:768px) {
+
+    .nav-menu{
+        writing-mode: horizontal-tb;
+
+    }
    .nav-menu ul{
        visibility: hidden;
    }
-    .navTrigger {
+    #navTrigger
+ {
         display: block;
     }
     .nav div.logo {
@@ -699,6 +715,7 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: auto;
         background-color: black;
         
