@@ -4,11 +4,11 @@ window.addEventListener('load', () => {
 
   function checkScroll() {
     const isPastImage = window.scrollY > mainimage.clientHeight;
-    if (isPastImage){
+    if (isPastImage) {
       nav.classList.add('scrolled');
       console.log("ahoj");
     }
-     
+
     else nav.classList.remove('scrolled');
   }
   checkScroll();
@@ -20,6 +20,8 @@ window.addEventListener('load', () => {
 function toggleMenu() {
   const x = document.getElementById("myNav");
   x.classList.toggle("responsive");
+  const y = document.getElementById("nav-socials");
+  y.classList.toggle("responsive");
 }
 /*$(document).ready(function () {
   var $mainimage = $(".main-image");

@@ -13,8 +13,14 @@ a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: bold 14px/1.4 'Open Sans', arial, sans-serif;;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    ;
 }
 
 /*--------------------------------------------------------------
@@ -50,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -59,103 +66,102 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 15px;
-    bottom: 15px;
-    z-index: 99999;
-}
-
-.back-to-top i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background: #47b2e4;
-    color: #fff;
-    transition: all 0.4s;
-}
-
-.back-to-top i:hover {
-    background: #e0b4de;
-    color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header{
+#header {
     position: fixed;
     width: 100%;
     top: 0;
-    
+
 }
 
 #header.scrolled {
     background-color: black !important;
     color: white;
-  }
-  #header.scrolled a {
+}
+
+#header.scrolled a {
     color: white;
-  }
-  #header.scrolled a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+}
+
+#header.scrolled a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
     border-bottom: 2px solid #45b7ec;
 
-  }
+}
+
 /*--------------------------------------------------------------
 # hovno
 --------------------------------------------------------------*/
 
-  #header.hovno {
+#header.hovno {
     background-color: cyan !important;
     color: white;
-  }
-  #header.hovno a {
+}
+
+#header.hovno a {
     color: white;
-  }
-  #header.hovno a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    border-bottom: 2px solid ;
+}
 
-  }
+#header.hovno a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    border-bottom: 2px solid;
 
-  
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 
-.container{
+.main-nav {
     margin-right: 0;
 }
 
-.nav-menu{
-    writing-mode: vertical-rl;
+.nav-brand-logo {
     width: 100%;
+    text-align: center;
 }
+
+.nav-socials {
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+}
+
+.nav-menu .nav-resp-socials {
+    display: none;
+}
+
+.nav-menu {
+    writing-mode: vertical-rl;
+}
+
 .nav-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.nav-menu > ul {
+.nav-menu>ul {
     display: flex;
     list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
     position: relative;
     white-space: nowrap;
     color: black;
@@ -173,38 +179,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: bold "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  border-bottom: 2px solid #45b7ec;
-    
-}
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    border-bottom: 2px solid #45b7ec;
 
-
-
-
-/* Get Startet Button */
-.get-started-btn {
-    margin-left: 25px;
-    color: #fff;
-    border-radius: 50px;
-    padding: 6px 25px 7px 25px;
-    white-space: nowrap;
-    transition: 0.3s;
-    font-size: 14px;
-    display: inline-block;
-    border: 2px solid #47b2e4;
-    font-weight: 600;
-}
-
-.get-started-btn:hover {
-    background: #31a9e1;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .get-started-btn {
-        margin: 0 48px 0 0;
-        padding: 6px 20px 7px 20px;
-    }
 }
 
 /* Mobile Navigation */
@@ -258,12 +237,14 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
     color: #47b2e4;
     text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
+.mobile-nav .drop-down>a:after {
     content: "\ea99";
     font-family: IcoFont;
     padding-left: 10px;
@@ -271,11 +252,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.drop-down>a:after {
     content: "\eaa1";
 }
 
-.mobile-nav .drop-down > a {
+.mobile-nav .drop-down>a {
     padding-right: 35px;
 }
 
@@ -317,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 /* container */
 
 
-.main-image{
+.main-image {
     height: 100vh;
     width: 100%;
     padding: 16px;
@@ -333,7 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width:768px) {
-    .container{
+    .nav {
         padding: 0;
     }
 }
@@ -342,53 +323,31 @@ h1, h2, h3, h4, h5, h6 {
 # About me
 --------------------------------------------------------------*/
 
-.content{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.content .container-about {
-    height: 100vh;
-    width: 50%;
-    padding: 100px;
-    
-}
 
-.content .container-about img{
-    height: 450px;
-    width: 390px;
-    float: right;
-}
-
-.content .container-about .about-text{
-    float: left;
-    padding: 30px;
-}
 
 
 @media (max-width: 815px) {
-    body{   
-      width: 100%;
+    body {
+        width: 100%;
     }
-  }
+}
 
-  
+
 .about-section {
     height: 100vh;
     width: 100%;
     padding: 100px;
     text-align: center;
     color: black;
-  }
+}
 
 
-  /* 
+/* 
 
   nav respons
   
   */
-  #navTrigger
- {
+#navTrigger {
     cursor: pointer;
     width: 30px;
     height: 25px;
@@ -451,6 +410,7 @@ h1, h2, h3, h4, h5, h6 {
     50% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -460,6 +420,7 @@ h1, h2, h3, h4, h5, h6 {
     50% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(45deg);
     }
@@ -469,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
     50% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -478,6 +440,7 @@ h1, h2, h3, h4, h5, h6 {
     50% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(45deg);
     }
@@ -487,9 +450,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -499,9 +464,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -511,9 +478,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -523,9 +492,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -535,9 +506,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -547,9 +520,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
@@ -559,9 +534,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -571,9 +548,11 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
@@ -581,16 +560,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active>a,
+.nav-menu .drop-down ul li:hover>a {
     color: #47b2e4;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
     color: #47b2e4;
     text-decoration: none;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.drop-down>a:after {
     content: "\eaa1";
 }
 
@@ -622,43 +605,50 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     display: block;
 }
+
 @media screen and (max-width:768px) {
 
-    .nav-menu{
+    .nav-menu {
         writing-mode: horizontal-tb;
 
     }
-   .nav-menu ul{
-       visibility: hidden;
-   }
-    #navTrigger
- {
+
+    .nav-menu ul {
+        visibility: hidden;
+    }
+
+    #navTrigger {
         display: block;
     }
+
     .nav div.logo {
         margin-left: 15px;
     }
+
     .nav div.main_list {
         width: 100%;
         height: 0;
         overflow: hidden;
     }
+
     .nav div.show_list {
         visibility: visible;
         height: auto;
         display: none;
     }
-   
+
     .nav div.main_list ul li {
         width: 100%;
         text-align: right;
     }
+
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
         font-size: 3rem;
         padding: 20px;
     }
+
     .nav div.media_button {
         display: block;
     }
@@ -697,17 +687,20 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
 
-    .container{
+    .main-nav {
         max-width: 100%;
     }
+
     .nav-menu.responsive {
         visibility: visible;
         position: fixed;
         flex-direction: column;
         width: 100%;
     }
-   
-    .nav-menu.responsive ul{
+
+
+
+    .nav-menu.responsive ul {
         visibility: visible;
         position: absolute;
         height: 100vh;
@@ -718,33 +711,48 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         margin: auto;
         background-color: black;
-        
+
     }
 
-    
+    .nav-menu .nav-resp-socials.responsive {
+        display: block;
+        color: white;
+
+    }
+
+    .nav-socials {
+        display: none;
+    }
+
+
 
     .nav-menu.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .nav-menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
-    .nav-menu.responsive .dropdown {float: none;}
-    .nav-menu.responsive .dropdown-content {position: relative;}
+
+    .nav-menu.responsive .dropdown {
+        float: none;
+    }
+
+    .nav-menu.responsive .dropdown-content {
+        position: relative;
+    }
+
     .nav-menu.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
+        display: block;
+        width: 100%;
+        text-align: left;
     }
-  }
-  .nav-active{
-      transform: translateX(0%);
-  }
+}
 
-
-
-
+.nav-active {
+    transform: translateX(0%);
+}
