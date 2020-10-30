@@ -23,6 +23,7 @@ function toggleMenu() {
   const y = document.getElementById("nav-socials");
   y.classList.toggle("responsive");
 }
+
 /*$(document).ready(function () {
   var $mainimage = $(".main-image");
     if ($(document).scrollTop() > $mainimage.height()) {

@@ -95,7 +95,6 @@ h6 {
 #header.scrolled a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-    border-bottom: 2px solid #45b7ec;
 
 }
 
@@ -115,7 +114,6 @@ h6 {
 #header.hovno a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-    border-bottom: 2px solid;
 
 }
 
@@ -140,6 +138,30 @@ h6 {
     width: 100%;
     text-align: end;
     padding: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.nav-socials i:hover{
+}
+.nav-socials #ig:hover{
+    color: violet;
+    
+}
+.nav-socials #fb:hover{
+    color: rgb(55, 55, 230);
+    
+}
+.nav-socials #twt:hover{
+    color: rgb(116, 205, 240);
+    
+}
+.nav-socials #yt:hover{
+    color: rgb(221, 17, 17);
+    
+}
+.nav-socials #tt:hover{
+    color: rgb(182, 182, 182);
+    
 }
 
 .nav-menu .nav-resp-socials {
@@ -148,6 +170,7 @@ h6 {
 
 .nav-menu {
     writing-mode: vertical-rl;
+    padding: 50px 20px 0;
 }
 
 .nav-menu ul {
@@ -165,7 +188,7 @@ h6 {
     position: relative;
     white-space: nowrap;
     color: black;
-    padding: 10px 0 10px 28px;
+    padding: 10px 0 10px 10px;
 }
 
 .nav-menu a {
@@ -182,8 +205,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-    border-bottom: 2px solid #45b7ec;
-
+    color: rgb(0, 193, 252);
 }
 
 /* Mobile Navigation */
@@ -619,6 +641,7 @@ h6 {
 
     #navTrigger {
         display: block;
+        margin: 20px;
     }
 
     .nav div.logo {
@@ -696,6 +719,7 @@ h6 {
         position: fixed;
         flex-direction: column;
         width: 100%;
+        padding: 0;
     }
 
 
@@ -717,6 +741,10 @@ h6 {
     .nav-menu .nav-resp-socials.responsive {
         display: block;
         color: white;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 10px;
+        padding: 10px 0 10px 10px;
 
     }
 
