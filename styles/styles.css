@@ -3,15 +3,7 @@ body {
     color: #444444;
 }
 
-a {
-    color: #47b2e4;
-    text-decoration: none;
-}
 
-a:hover {
-    color: #47b2e4;
-    text-decoration: none;
-}
 
 h1,
 h2,
@@ -23,34 +15,7 @@ h6 {
     ;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
-    background: #37517e;
-}
 
-#preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid #37517e;
-    border-top-color: #fff;
-    border-bottom-color: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
-}
 
 @-webkit-keyframes animate-preloader {
     0% {
@@ -84,12 +49,12 @@ h6 {
 }
 
 #header.scrolled {
-    background-color: black !important;
-    color: white;
+    
+    color: black;
 }
 
 #header.scrolled a {
-    color: white;
+    color: black;
 }
 
 #header.scrolled a:hover,
@@ -102,20 +67,6 @@ h6 {
 # hovno
 --------------------------------------------------------------*/
 
-#header.hovno {
-    background-color: cyan !important;
-    color: white;
-}
-
-#header.hovno a {
-    color: white;
-}
-
-#header.hovno a:hover,
-.nav-menu .active>a,
-.nav-menu li:hover>a {
-
-}
 
 
 /*--------------------------------------------------------------
@@ -141,6 +92,9 @@ h6 {
     letter-spacing: 3px;
     cursor: pointer;
 }
+.nav-socials a{
+    color: white;
+}
 .nav-socials i:hover{
 }
 .nav-socials #ig:hover{
@@ -148,7 +102,7 @@ h6 {
     
 }
 .nav-socials #fb:hover{
-    color: rgb(55, 55, 230);
+    color: rgb(59, 59, 204);
     
 }
 .nav-socials #twt:hover{
@@ -195,7 +149,7 @@ h6 {
     font-weight: bold;
     position: relative;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -206,6 +160,7 @@ h6 {
 .nav-menu .active>a,
 .nav-menu li:hover>a {
     color: rgb(0, 193, 252);
+    text-decoration: none;
 }
 
 /* Mobile Navigation */
@@ -274,65 +229,31 @@ h6 {
     right: 15px;
 }
 
-.mobile-nav .active.drop-down>a:after {
-    content: "\eaa1";
-}
 
-.mobile-nav .drop-down>a {
-    padding-right: 35px;
-}
 
-.mobile-nav .drop-down ul {
-    display: none;
-    overflow: hidden;
-}
 
-.mobile-nav .drop-down li {
-    padding-left: 20px;
-}
 
-.mobile-nav-overly {
-    width: 100%;
-    height: 100%;
-    z-index: 9997;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgba(40, 58, 90, 0.6);
-    overflow: hidden;
-    display: none;
-    transition: ease-in-out 0.2s;
-}
 
-.mobile-nav-active {
-    overflow: hidden;
-}
 
-.mobile-nav-active .mobile-nav {
-    opacity: 1;
-    visibility: visible;
-}
 
-.mobile-nav-active .mobile-nav-toggle i {
-    color: #fff;
-}
+
+
 
 /* container */
 
 
-.main-image {
+#main-image {
     height: 100vh;
     width: 100%;
     padding: 16px;
     color: white;
     display: flex;
+    background-color: black;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("https://avante.biz/wp-content/uploads/Black-White-Wallpaper/Black-White-Wallpaper-035.jpg");
 }
 
 @media screen and (max-width:768px) {
@@ -381,7 +302,7 @@ h6 {
 }
 
 #navTrigger i {
-    background-color: #3E70B1;
+    background-color: white;
     border-radius: 2px;
     content: '';
     display: block;
@@ -582,35 +503,6 @@ h6 {
 
 
 
-.nav-menu .drop-down ul a:hover,
-.nav-menu .drop-down ul .active>a,
-.nav-menu .drop-down ul li:hover>a {
-    color: #47b2e4;
-}
-
-.mobile-nav a:hover,
-.mobile-nav .active>a,
-.mobile-nav li:hover>a {
-    color: #47b2e4;
-    text-decoration: none;
-}
-
-.mobile-nav .active.drop-down>a:after {
-    content: "\eaa1";
-}
-
-.mobile-nav-active {
-    overflow: hidden;
-}
-
-.mobile-nav-active .mobile-nav {
-    opacity: 1;
-    visibility: visible;
-}
-
-.mobile-nav-active .mobile-nav-toggle i {
-    color: #fff;
-}
 
 
 
@@ -741,10 +633,10 @@ h6 {
     .nav-menu .nav-resp-socials.responsive {
         display: block;
         color: white;
-        width: 100%;
         text-align: center;
         letter-spacing: 10px;
         padding: 10px 0 10px 10px;
+        writing-mode: vertical-lr;
 
     }
 
