@@ -1,24 +1,37 @@
 window.addEventListener('load', () => {
+  checkScroll();
   window.addEventListener('scroll', checkScroll);
-
   document.getElementById('navTrigger').addEventListener('click', toggleMenu);
   document.getElementById('navTrigger').addEventListener('click', menuAnimation);
-
+// resize
 });
 
 function checkScroll() {
   const mainimage = document.getElementById("main-image").clientHeight;
   const nav = document.getElementById("header");
+  
+
+  const aboutsection = document.getElementById("about-section").clientHeight;
+
 
   var scroll = window.scrollY;
-  if (scroll >= mainimage){
-    nav.classList.add('scrolled');
-    console.log(mainimage);
-    console.log(scroll);
-  } 
-  else nav.classList.remove('scrolled');
+  var windowwidth = window.innerWidth;
+  if( windowwidth > 768){
+    if (scroll >= mainimage){
+      nav.classList.add('scrolled');
+      console.log(mainimage);
+      console.log(scroll);
+    } 
+    else nav.classList.remove('scrolled');
+  
+    if(scroll >= mainimage + aboutsection) {
+      nav.classList.remove('scrolled');
+      nav.classList.add('scrolledTopic');
+    }
+    else nav.classList.remove('scrolledTopic');
 
-
+  }
+  
 
   /*var width = window.innerWidth;
 

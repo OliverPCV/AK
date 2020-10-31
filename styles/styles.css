@@ -57,6 +57,15 @@ h6 {
 /*--------------------------------------------------------------
 # aside sidebar
 --------------------------------------------------------------*/
+.container{
+    width: 100%;
+    text-align: center;
+    height: 30vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 100px 0 0 0;
+}
+
 
 #left-sidebar-off {
     position: fixed;
@@ -89,9 +98,13 @@ h6 {
     height: 50px;
     width: 50px;
 }
+.left-sidebar-links{
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+
+}
 .left-sidebar-links ul {
     padding: 0;
-    font-family: bold "Open Sans", sans-serif;
 }
 
 .left-sidebar-links ul li {
@@ -154,11 +167,15 @@ h6 {
 
 #header.scrolled {
     color: black;
-    box-shadow: 5px 5px 5px #575b5e;
-    background-color: white;
 }
 
 #header.scrolled a {
+    color: black;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+}
+
+#header.scrolled .logo{
     color: black;
 }
 
@@ -184,22 +201,27 @@ h6 {
 # hovno
 --------------------------------------------------------------*/
 
-#header.ahoj {
-
+#header.scrolledTopic {
     color: white;
 }
 
-#header.ahoj a {
+#header.scrolledTopic a {
+    color: white;
+
+}
+
+
+.nav-menu.scrolledTopic ul li{
     color: white;
 }
 
-#header.ahoj a:hover,
+#header.scrolledTopic a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
     color: #47b2e4;
 }
 
-#header.ahoj #navTrigger i {
+#header.scrolledTopic #navTrigger i {
     background-color: white;
     border-radius: 2px;
     content: '';
@@ -208,6 +230,14 @@ h6 {
     height: 4px;
 }
 
+#navTrigger.scrolledTopic i {
+    background-color: white;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
 
 
 /*--------------------------------------------------------------
@@ -223,7 +253,12 @@ h6 {
 .nav-brand-logo {
     width: 100%;
     text-align: center;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 50px;
+    text-align: left;
+}
+
+.logo{
+    color: white;
 }
 
 .nav-socials {
@@ -293,15 +328,15 @@ h6 {
 }
 
 .nav-menu a {
-    font-weight: bold;
+   
     position: relative;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
-    font-family: bold "Open Sans", sans-serif;
-}
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 
 .nav-menu a:hover,
 .nav-menu .active>a,
@@ -417,18 +452,37 @@ h6 {
 
 
 @media (max-width: 815px) {
-    body {
-        width: 100%;
+    #header{
+        background-color: white;
+    }
+    #header{
+        color: black;
+    }
+    #header .logo{
+        color: black;
     }
 }
 
 
-.about-section {
+#about-section {
     height: 100vh;
     width: 100%;
     padding: 100px;
     text-align: center;
     color: black;
+}
+
+
+/*--------------------------------------------------------------
+# Tour
+--------------------------------------------------------------*/
+#tour-section{
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
 }
 
 
@@ -449,7 +503,7 @@ h6 {
 }
 
 #navTrigger i {
-    background-color: white;
+    background-color: black;
     border-radius: 2px;
     content: '';
     display: block;
@@ -809,6 +863,7 @@ h6 {
     #left-sidebar-off.rolled {
         transform: translateX(0);
         transition: 1s;
+        display: block;
     
     }
     
