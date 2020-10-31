@@ -68,6 +68,10 @@ h6 {
     background-color: black;
     transform: translateX(-250px);
 }
+#left-sidebar-nav img {
+    height: 50px;
+    width: 50px;
+}
 
 #left-sidebar-container {
     display: flex;
@@ -81,6 +85,10 @@ h6 {
     width: 100%;
 }
 
+#left-sidebar-nav img {
+    height: 50px;
+    width: 50px;
+}
 .left-sidebar-links ul {
     padding: 0;
 }
@@ -98,11 +106,7 @@ h6 {
 
 }
 .left-sidebar-links ul li a:hover {
-
-    
     color: #47b2e4;
-   
-
 }
 
 .left-sidebar-socials {
@@ -123,6 +127,10 @@ h6 {
 
 #header.rolled{
     opacity: 3;
+}
+
+#content.rolled{
+    background-color: #4d5052;
 }
 
 
@@ -224,6 +232,7 @@ h6 {
 .nav-brand-logo {
     width: 100%;
     text-align: center;
+    padding: 0 0 0 25px;
 }
 
 .nav-socials {
@@ -806,6 +815,7 @@ h6 {
         display: block;
         text-align: left;
     }
+
 
 
 

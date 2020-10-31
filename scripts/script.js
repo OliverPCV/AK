@@ -33,6 +33,8 @@ function toggleMenu() {
   x.classList.toggle("rolled");
   const y = document.getElementById("header");
   y.classList.toggle("rolled");
+  const z = document.getElementById("content");
+  z.classList.toggle("rolled");
   /*const x = document.getElementById("myNav");
   x.classList.toggle("responsive");
   const y = document.getElementById("nav-socials");
