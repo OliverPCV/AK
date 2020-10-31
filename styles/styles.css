@@ -91,6 +91,7 @@ h6 {
 }
 .left-sidebar-links ul {
     padding: 0;
+    font-family: bold "Open Sans", sans-serif;
 }
 
 .left-sidebar-links ul li {
@@ -119,19 +120,7 @@ h6 {
     letter-spacing: 10px;
 }
 
-#left-sidebar-off.rolled {
-    transform: translateX(0);
-    transition: 1s;
 
-}
-
-#header.rolled{
-    opacity: 3;
-}
-
-#content.rolled{
-    background-color: #4d5052;
-}
 
 
 
@@ -166,6 +155,7 @@ h6 {
 #header.scrolled {
     color: black;
     box-shadow: 5px 5px 5px #575b5e;
+    background-color: white;
 }
 
 #header.scrolled a {
@@ -227,6 +217,7 @@ h6 {
 
 .main-nav {
     margin-right: 0;
+    height: 50px;
 }
 
 .nav-brand-logo {
@@ -404,7 +395,7 @@ h6 {
     padding: 16px;
     color: white;
     display: flex;
-    background-color: black;
+    background-image: url("https://wallpaperaccess.com/full/1201806.jpg");
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -815,7 +806,19 @@ h6 {
         display: block;
         text-align: left;
     }
-
+    #left-sidebar-off.rolled {
+        transform: translateX(0);
+        transition: 1s;
+    
+    }
+    
+    #header.rolled{
+        opacity: 3;
+    }
+    
+    #content.rolled{
+        background-color: #4d5052;
+    }
 
 
 
