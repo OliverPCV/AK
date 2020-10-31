@@ -9,11 +9,22 @@ window.addEventListener('load', () => {
 function checkScroll() {
   const mainimage = document.getElementById("main-image").clientHeight;
   const nav = document.getElementById("header");
-  var scroll = window.scrollY;
 
-  if (scroll >= mainimage) nav.classList.toggle('scrolled');
+  var scroll = window.scrollY;
+  if (scroll >= mainimage){
+    nav.classList.add('scrolled');
+    console.log(mainimage);
+    console.log(scroll);
+  } 
   else nav.classList.remove('scrolled');
 
+
+
+  /*var width = window.innerWidth;
+
+  if(width <= 768){
+    nav.classList.remove('scrolled');
+  }*/
 }
 
 
@@ -21,8 +32,8 @@ function toggleMenu() {
   const x = document.getElementById("myNav");
   x.classList.toggle("responsive");
   const y = document.getElementById("nav-socials");
-  y.classList.toggle("responsive");
-
+  y.classList.toggle("resposnive");
+  
   /*window.addEventListener('click', () => {
       const mp =document.getElementById("main-image");
       const c = document.getElementById("content");

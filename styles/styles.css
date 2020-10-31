@@ -107,6 +107,8 @@ h6 {
     height: 4px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -696,14 +698,8 @@ h6 {
         display: block;
         text-align: left;
     }
-    #main-image{
-        display: none;
+    
 
-    }
-
-    .content{
-        display: none;
-    }
   
 }
 
