@@ -29,18 +29,22 @@ function checkScroll() {
 
 
 function toggleMenu() {
-  const x = document.getElementById("myNav");
+  const x = document.getElementById("left-sidebar-off");
+  x.classList.toggle("rolled");
+  const y = document.getElementById("header");
+  y.classList.toggle("rolled");
+  /*const x = document.getElementById("myNav");
   x.classList.toggle("responsive");
   const y = document.getElementById("nav-socials");
   y.classList.toggle("resposnive");
   
-  /*window.addEventListener('click', () => {
+  window.addEventListener('click', () => {
       const mp =document.getElementById("main-image");
       const c = document.getElementById("content");
       mp.style.display = "block";
       c.style.display = "block";
 
-  });*/
+  });
   window.addEventListener('click', (e) => {
     if (e.target.classList.contains('responsive')) {
       const mp = document.getElementById("main-image");
@@ -53,7 +57,7 @@ function toggleMenu() {
       e.target.classList.toggle('responsive');
     }
 
-  });
+  });*/
 }
 const menuAnimation = () => {
   const x = document.getElementById("navTrigger");
