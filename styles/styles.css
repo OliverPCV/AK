@@ -253,8 +253,13 @@ h6 {
 .nav-brand-logo {
     width: 100%;
     text-align: center;
-    padding: 0 0 0 50px;
     text-align: left;
+    padding: 0 0 0 50px;
+}
+.nav-brand-logo img{
+    
+    height: 150px; 
+    width: 150px;
 }
 
 .logo{
@@ -452,15 +457,7 @@ h6 {
 
 
 @media (max-width: 815px) {
-    #header{
-        background-color: white;
-    }
-    #header{
-        color: black;
-    }
-    #header .logo{
-        color: black;
-    }
+    
 }
 
 
@@ -723,6 +720,15 @@ h6 {
 
 @media screen and (max-width:768px) {
 
+    #header{
+        background-color: white;
+    }
+    #header{
+        color: black;
+    }
+    #header .logo{
+        color: black;
+    }
     .nav-menu {
         writing-mode: horizontal-tb;
 
@@ -735,8 +741,11 @@ h6 {
     #navTrigger {
         display: block;
         margin: 20px;
+        color: black;
     }
-
+    #navTrigger i{
+        color: black;
+    }
     .nav div.logo {
         margin-left: 15px;
     }
@@ -871,11 +880,34 @@ h6 {
         opacity: 3;
     }
     
-    #content.rolled{
-        background-color: #4d5052;
+    #about-section.rolled{
+        opacity: 0.7;
+    }
+    #tour-section.rolled{
+        opacity: 0.7;
+
     }
 
+    #left-sidebar-off.unrolled {
+        display: none;
+    
+    }
+    
+    #header.unrolled{
+    }
+    
+    #about-section.unrolled{
+    }
+    #tour-section.unrolled{
 
+    }
+
+    .nav-brand-logo img{
+    
+        height: 70px; 
+        width: 70px;
+    }
+    
 
 }
 
