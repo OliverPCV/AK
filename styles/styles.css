@@ -9,7 +9,6 @@ body {
 
 a {
     font-family: bold 14px/1.4 'Open Sans', arial, sans-serif;
-
 }
 
 h1,
@@ -22,13 +21,10 @@ h6 {
     ;
 }
 
-
-
 @-webkit-keyframes animate-preloader {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -38,15 +34,16 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
 
+
 /*--------------------------------------------------------------
 # page
 --------------------------------------------------------------*/
+
 #page {
     padding-bottom: 0 !important;
     height: auto;
@@ -54,10 +51,12 @@ h6 {
     z-index: 10;
 }
 
+
 /*--------------------------------------------------------------
 # aside sidebar
 --------------------------------------------------------------*/
-.container{
+
+.container {
     width: 75%;
     text-align: center;
     height: 30vh;
@@ -67,7 +66,6 @@ h6 {
     letter-spacing: 0.5px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
 
 #left-sidebar-off {
     position: fixed;
@@ -79,6 +77,7 @@ h6 {
     background-color: black;
     transform: translateX(-250px);
 }
+
 #left-sidebar-nav img {
     height: 50px;
     width: 50px;
@@ -100,11 +99,12 @@ h6 {
     height: 50px;
     width: 50px;
 }
-.left-sidebar-links{
+
+.left-sidebar-links {
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
-
 }
+
 .left-sidebar-links ul {
     padding: 0;
 }
@@ -115,12 +115,11 @@ h6 {
 }
 
 .left-sidebar-links ul li a {
-
     text-decoration: none;
     color: white;
     font-size: large;
-
 }
+
 .left-sidebar-links ul li a:hover {
     color: #47b2e4;
 }
@@ -135,13 +134,8 @@ h6 {
     letter-spacing: 10px;
 }
 
-
-
-
-
 .left-sidebar-links.responsive ul>li>a {
     color: white;
-
 }
 
 .nav-menu.responsive .icon {
@@ -156,34 +150,34 @@ h6 {
     text-align: left;
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
     position: fixed;
     width: 100%;
     height: 60px;
     top: 0;
-
 }
-
-
-
 
 
 /*--------------------------------------------------------------
 # hovno
 --------------------------------------------------------------*/
 
+
 /*
 Hovno 2
 */
 
 
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
+
 /* Desktop Navigation */
 
 .main-nav {
@@ -197,13 +191,13 @@ Hovno 2
     text-align: left;
     padding: 0 0 0 50px;
 }
-.nav-brand-logo img{
-    
-    height: 150px; 
+
+.nav-brand-logo img {
+    height: 150px;
     width: 150px;
 }
 
-.logo{
+.logo {
     color: white;
 }
 
@@ -223,27 +217,22 @@ Hovno 2
 
 .nav-socials #ig:hover {
     color: violet;
-
 }
 
 .nav-socials #fb:hover {
     color: rgb(59, 59, 204);
-
 }
 
 .nav-socials #twt:hover {
     color: rgb(116, 205, 240);
-
 }
 
 .nav-socials #yt:hover {
     color: rgb(221, 17, 17);
-
 }
 
 .nav-socials #tt:hover {
     color: rgb(182, 182, 182);
-
 }
 
 .nav-menu .nav-resp-socials {
@@ -274,7 +263,6 @@ Hovno 2
 }
 
 .nav-menu a {
-   
     position: relative;
     color: white;
     font-size: 18px;
@@ -282,7 +270,8 @@ Hovno 2
     letter-spacing: 0.5px;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
 
 .nav-menu a:hover,
 .nav-menu .active>a,
@@ -291,7 +280,9 @@ Hovno 2
     text-decoration: none;
 }
 
+
 /* Mobile Navigation */
+
 .mobile-nav-toggle {
     position: fixed;
     top: 20px;
@@ -358,17 +349,7 @@ Hovno 2
 }
 
 
-
-
-
-
-
-
-
-
-
 /* container */
-
 
 #main-image {
     height: 100vh;
@@ -390,10 +371,10 @@ Hovno 2
     }
 }
 
+
 /*--------------------------------------------------------------
 # About me
 --------------------------------------------------------------*/
-
 
 #about-section {
     height: 100vh;
@@ -410,10 +391,9 @@ Hovno 2
 #header.scrolledAbout a {
     color: black;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
-
 }
 
-#header.scrolledAbout .logo{
+#header.scrolledAbout .logo {
     color: black;
 }
 
@@ -436,7 +416,8 @@ Hovno 2
 /*--------------------------------------------------------------
 # Tour
 --------------------------------------------------------------*/
-#tour-section{
+
+#tour-section {
     height: 100vh;
     width: 100%;
     padding: 100px;
@@ -451,11 +432,9 @@ Hovno 2
 
 #header.scrolledTour a {
     color: white;
-
 }
 
-
-.nav-menu.scrolledTour ul li{
+.nav-menu.scrolledTour ul li {
     color: white;
 }
 
@@ -483,6 +462,7 @@ Hovno 2
     height: 4px;
 }
 
+
 /*--------------------------------------------------------------
 # Music
 --------------------------------------------------------------*/
@@ -494,28 +474,29 @@ Hovno 2
     text-align: center;
     color: black;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
 }
 
-.video-container{
-    position: relative;
+.video-container {
+    /* position: relative; */
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%;
-    z-index: -1;
+    /* padding-top: 56.25%; */
+    /* z-index: -1; */
     text-align: center;
     display: flex;
+    height: 400px;
     justify-content: center;
     align-items: center;
 }
 
-
-.video-container iframe{
-    position: absolute;
+.video-container iframe {
+    /* position: absolute; */
     top: 0;
     bottom: 0;
     width: 60%;
-    height: 60%;
+    height: 100%;
 }
 
 #header.scrolledMusic {
@@ -525,10 +506,9 @@ Hovno 2
 #header.scrolledMusic a {
     color: black;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
-
 }
 
-#header.scrolledMusic .logo{
+#header.scrolledMusic .logo {
     color: black;
 }
 
@@ -546,11 +526,14 @@ Hovno 2
     width: 100%;
     height: 4px;
 }
+
+
 /* 
 
   nav respons
   
   */
+
 #navTrigger {
     cursor: pointer;
     width: 30px;
@@ -577,8 +560,6 @@ Hovno 2
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
-
-
 
 #navTrigger i:nth-child(2) {
     margin: 5px 0;
@@ -614,7 +595,6 @@ Hovno 2
     50% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -624,7 +604,6 @@ Hovno 2
     50% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(45deg);
     }
@@ -634,7 +613,6 @@ Hovno 2
     50% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -644,7 +622,6 @@ Hovno 2
     50% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(45deg);
     }
@@ -654,11 +631,9 @@ Hovno 2
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -668,11 +643,9 @@ Hovno 2
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -682,11 +655,9 @@ Hovno 2
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -696,11 +667,9 @@ Hovno 2
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -710,11 +679,9 @@ Hovno 2
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -724,11 +691,9 @@ Hovno 2
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
@@ -738,11 +703,9 @@ Hovno 2
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -752,21 +715,13 @@ Hovno 2
     0% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
-
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
 }
-
-
-
-
-
-
 
 #navTrigger {
     display: none;
@@ -780,68 +735,6 @@ Hovno 2
     position: relative;
     display: block;
 }
-
-@media screen and (max-width:768px) {
-
-    #header{
-        background-color: white;
-    }
-    #header{
-        color: black;
-    }
-    #header .logo{
-        color: black;
-    }
-    .nav-menu {
-        writing-mode: horizontal-tb;
-
-    }
-
-    .nav-menu ul {
-        visibility: hidden;
-    }
-
-    #navTrigger {
-        display: block;
-        margin: 20px;
-        color: black;
-    }
-    #navTrigger i{
-        color: black;
-    }
-    .nav div.logo {
-        margin-left: 15px;
-    }
-
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .nav div.show_list {
-        visibility: visible;
-        height: auto;
-        display: none;
-    }
-
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: right;
-    }
-
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 3rem;
-        padding: 20px;
-    }
-
-    .nav div.media_button {
-        display: block;
-    }
-}
-
 
 .nav div.main_list {
     height: 65px;
@@ -871,16 +764,12 @@ Hovno 2
     font-size: 2.4rem;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
     .main-nav {
         height: 100%;
         overflow: hidden;
         max-width: 100%;
     }
-
     .nav-menu.responsive {
         visibility: visible;
         position: fixed;
@@ -888,9 +777,6 @@ Hovno 2
         width: 100%;
         padding: 0;
     }
-
-
-
     .nav-menu.responsive ul {
         visibility: visible;
         position: absolute;
@@ -902,9 +788,7 @@ Hovno 2
         justify-content: center;
         margin: auto;
         background-color: black;
-
     }
-
     .nav-menu .nav-resp-socials.responsive {
         display: block;
         color: white;
@@ -912,21 +796,15 @@ Hovno 2
         letter-spacing: 10px;
         padding: 10px 0 10px 10px;
         writing-mode: vertical-lr;
-
     }
-
     .nav-socials {
         display: none;
     }
-
-
-
     .nav-menu.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-
     .nav-menu.responsive a {
         float: none;
         display: block;
@@ -936,50 +814,97 @@ Hovno 2
         transform: translateX(0);
         transition: 1s;
         display: block;
-    
     }
-    
-    #header.rolled{
+    #header.rolled {
         opacity: 3;
     }
-    
-    #about-section.rolled{
+    #about-section.rolled {
         opacity: 0.7;
     }
-    #tour-section.rolled{
+    #tour-section.rolled {
         opacity: 0.7;
-
     }
-
     #left-sidebar-off.unrolled {
         display: none;
-    
     }
-    
-    #header.unrolled{
-    }
-    
-    #about-section.unrolled{
-    }
-    #tour-section.unrolled{
-
-    }
-
-    .nav-brand-logo img{
-    
-        height: 70px; 
+    .nav-brand-logo img {
+        height: 70px;
         width: 70px;
     }
+}
 
-  
-    
-
+@media screen and (max-width:768px) {
+    #header {
+        background-color: white;
+    }
+    #header {
+        color: black;
+    }
+    #header .logo {
+        color: black;
+    }
+    .nav-menu {
+        writing-mode: horizontal-tb;
+    }
+    .nav-menu ul {
+        visibility: hidden;
+    }
+    #navTrigger {
+        display: block;
+        margin: 20px;
+        color: black;
+    }
+    #navTrigger i {
+        color: black;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        visibility: visible;
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+    .video-container iframe {
+        /* position: absolute; */
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 50px;
+    }
+    .video-container {
+        /* position: relative; */
+        overflow: hidden;
+        width: 100%;
+        /* padding-top: 56.25%; */
+        /* z-index: -1; */
+        text-align: center;
+        display: flex;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .nav-active {
     transform: translateX(0%);
-}
-
-#about-section{
-   
 }
