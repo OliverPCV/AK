@@ -58,12 +58,14 @@ h6 {
 # aside sidebar
 --------------------------------------------------------------*/
 .container{
-    width: 100%;
+    width: 75%;
     text-align: center;
     height: 30vh;
     /* align-items: center; */
     /* justify-content: center; */
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
+    letter-spacing: 0.5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 
@@ -165,34 +167,6 @@ h6 {
 
 }
 
-#header.scrolled {
-    color: black;
-}
-
-#header.scrolled a {
-    color: black;
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
-
-}
-
-#header.scrolled .logo{
-    color: black;
-}
-
-#header.scrolled a:hover,
-.nav-menu .active>a,
-.nav-menu li:hover>a {
-    color: #47b2e4;
-}
-
-#header.scrolled #navTrigger i {
-    background-color: black;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
 
 
 
@@ -201,43 +175,10 @@ h6 {
 # hovno
 --------------------------------------------------------------*/
 
-#header.scrolledTopic {
-    color: white;
-}
+/*
+Hovno 2
+*/
 
-#header.scrolledTopic a {
-    color: white;
-
-}
-
-
-.nav-menu.scrolledTopic ul li{
-    color: white;
-}
-
-#header.scrolledTopic a:hover,
-.nav-menu .active>a,
-.nav-menu li:hover>a {
-    color: #47b2e4;
-}
-
-#header.scrolledTopic #navTrigger i {
-    background-color: white;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-#navTrigger.scrolledTopic i {
-    background-color: white;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
 
 
 /*--------------------------------------------------------------
@@ -454,19 +395,41 @@ h6 {
 --------------------------------------------------------------*/
 
 
-
-
-@media (max-width: 815px) {
-    
-}
-
-
 #about-section {
     height: 100vh;
     width: 100%;
     padding: 100px;
     text-align: center;
     color: black;
+}
+
+#header.scrolledAbout {
+    color: black;
+}
+
+#header.scrolledAbout a {
+    color: black;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+}
+
+#header.scrolledAbout .logo{
+    color: black;
+}
+
+#header.scrolledAbout a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    color: #47b2e4;
+}
+
+#header.scrolledAbout #navTrigger i {
+    background-color: black;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
 }
 
 
@@ -482,7 +445,107 @@ h6 {
     background-color: black;
 }
 
+#header.scrolledTour {
+    color: white;
+}
 
+#header.scrolledTour a {
+    color: white;
+
+}
+
+
+.nav-menu.scrolledTour ul li{
+    color: white;
+}
+
+#header.scrolledTour a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    color: #47b2e4;
+}
+
+#header.scrolledTour #navTrigger i {
+    background-color: white;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+#navTrigger.scrolledTour i {
+    background-color: white;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+/*--------------------------------------------------------------
+# Music
+--------------------------------------------------------------*/
+
+#music-section {
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0 0 0;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    z-index: -1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    height: 60%;
+}
+
+#header.scrolledMusic {
+    color: black;
+}
+
+#header.scrolledMusic a {
+    color: black;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+}
+
+#header.scrolledMusic .logo{
+    color: black;
+}
+
+#header.scrolledMusic a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    color: #47b2e4;
+}
+
+#header.scrolledMusic #navTrigger i {
+    background-color: black;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
 /* 
 
   nav respons
@@ -907,10 +970,16 @@ h6 {
         height: 70px; 
         width: 70px;
     }
+
+  
     
 
 }
 
 .nav-active {
     transform: translateX(0%);
+}
+
+#about-section{
+   
 }

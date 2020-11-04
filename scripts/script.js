@@ -12,20 +12,29 @@ function checkScroll() {
   const mainimage = document.getElementById("main-image").clientHeight;
   const nav = document.getElementById("header");
 
-  const aboutsection = document.getElementById("about-section").clientHeight;
+  const aboutsection = document.getElementById("about-section").clientHeight -5;
+  const toursection = document.getElementById("tour-section").clientHeight -5;
+
 
   var scroll = window.scrollY;
   var windowwidth = window.innerWidth;
 
   if (windowwidth > 768) {
-    if (scroll >= mainimage) {
-      nav.classList.add('scrolled');
-    } else nav.classList.remove('scrolled');
+    if (scroll >= mainimage ) {
+    
+      nav.classList.add('scrolledAbout');
+    } else nav.classList.remove('scrolledAbout');
 
-    if (scroll >= mainimage + aboutsection) {
-      nav.classList.remove('scrolled');
-      nav.classList.add('scrolledTopic');
-    } else nav.classList.remove('scrolledTopic');
+    if (scroll >= (mainimage + aboutsection)) {
+
+      nav.classList.remove('scrolledAbout');
+      nav.classList.add('scrolledTour');
+    } else nav.classList.remove('scrolledTour');
+
+    if (scroll >= (mainimage + aboutsection + toursection)) {
+      nav.classList.remove('scrolledTour');
+      nav.classList.add('scrolledMusic');
+    } else nav.classList.remove('scrolledMusic');
 
   }
 
