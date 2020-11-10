@@ -9,6 +9,7 @@ body {
 
 a {
     font-family: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    cursor: pointer;
 }
 
 h1,
@@ -112,12 +113,14 @@ h6 {
 .left-sidebar-links ul li {
     list-style: none;
     padding: 5px;
+    cursor: pointer;
 }
 
 .left-sidebar-links ul li a {
     text-decoration: none;
     color: white;
     font-size: large;
+    cursor: pointer;
 }
 
 .left-sidebar-links ul li a:hover {
@@ -219,12 +222,12 @@ Hovno 2
     color: violet;
 }
 
-.nav-socials #fb:hover {
-    color: rgb(59, 59, 204);
+.nav-socials #em:hover {
+    color: rgb(182, 182, 182);
 }
 
-.nav-socials #twt:hover {
-    color: rgb(116, 205, 240);
+.nav-socials #st:hover {
+    color: rgb(48, 135, 41);
 }
 
 .nav-socials #yt:hover {
@@ -473,9 +476,16 @@ Hovno 2
     padding: 100px 0 0 0;
     text-align: center;
     color: black;
-    display: flex;
     /* justify-content: center; */
     flex-direction: column;
+}
+
+.musicbtn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .video-container {
@@ -495,7 +505,6 @@ Hovno 2
     /* position: absolute; */
     top: 0;
     bottom: 0;
-    width: 60%;
     height: 100%;
 }
 
@@ -525,6 +534,50 @@ Hovno 2
     display: block;
     width: 100%;
     height: 4px;
+}
+
+div.gallery img {
+    width: 250px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    filter: grayscale();
+    padding: 20px;
+    float: left;
+    opacity: 0.8;
+}
+
+.responsive:hover {
+    filter: brightness();
+    opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -887,7 +940,6 @@ Hovno 2
         /* position: absolute; */
         top: 0;
         bottom: 0;
-        width: 100%;
         height: 100%;
         padding: 0 50px;
     }
@@ -902,6 +954,9 @@ Hovno 2
         height: 250px;
         justify-content: center;
         align-items: center;
+    }
+    .musicbtn-container {
+        flex-direction: column;
     }
 }
 

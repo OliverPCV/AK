@@ -41,8 +41,6 @@ function checkScroll() {
         } else nav.classList.remove('scrolledMusic');
 
     }
-
-
 }
 
 
@@ -53,10 +51,6 @@ function toggleMenu() {
     y.classList.toggle("rolled");
     const z = document.getElementById("content");
     z.classList.toggle("rolled");
-
-
-
-
 }
 
 function navUnroll() {
