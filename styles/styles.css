@@ -12,14 +12,18 @@ a {
     cursor: pointer;
 }
 
+p {
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: bold 14px/1.4 'Open Sans', arial, sans-serif;
-    ;
+    font-family: Oswald;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -63,9 +67,12 @@ h6 {
     height: 30vh;
     /* align-items: center; */
     /* justify-content: center; */
-    padding: 50px 0 0 0;
-    letter-spacing: 0.5px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+}
+
+.container p {
+    margin: 0;
 }
 
 #left-sidebar-off {
@@ -89,7 +96,6 @@ h6 {
     justify-content: center;
     text-align: center;
     width: 100%;
-    letter-spacing: 1px;
 }
 
 #left-sidebar-nav {
@@ -382,9 +388,91 @@ Hovno 2
 #about-section {
     height: 100vh;
     width: 100%;
-    padding: 100px;
+    padding: 10px;
     text-align: center;
     color: black;
+}
+
+#about-section h1 {
+    padding: 50px;
+    padding: 50px 0 20px 0;
+}
+
+#about-section .container .img {
+    padding: 0 0 0 20px;
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.main-nav {
+    margin-right: 0;
+    height: 50px;
+}
+
+.nav-brand-logo {
+    width: 100%;
+    text-align: center;
+    text-align: left;
+    padding: 0 0 0 50px;
+}
+
+.nav-brand-logo img {
+    height: 150px;
+    width: 150px;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-socials {
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.nav-socials a {
+    color: white;
+}
+
+.nav-socials #ig:hover {
+    color: violet;
+}
+
+.nav-socials #em:hover {
+    color: rgb(182, 182, 182);
+}
+
+.nav-socials #ms:hover {
+    background-image: linear-gradient( red, indigo, cyan, blue);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-socials #st:hover {
+    color: rgb(48, 135, 41);
+}
+
+.nav-socials #yt:hover {
+    color: rgb(221, 17, 17);
+}
+
+.nav-socials #tt:hover {
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 0.726), black);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 #header.scrolledAbout {
@@ -958,8 +1046,198 @@ div.desc {
     .musicbtn-container {
         flex-direction: column;
     }
+    .container p {
+        font-size: 14px;
+    }
+    #about-section .container .img {
+        height: 230px;
+        width: 220px;
+        padding: 0 20px 0 10px;
+    }
+    #about-section .container p {
+        font-size: 16.5px;
+    }
+}
+
+@media (max-width: 320px),
+(max-height: 568) {
+    #navTrigger {
+        margin: auto;
+    }
+    .nav-brand-logo img {
+        padding: 0 5px 5px 0;
+    }
 }
 
 .nav-active {
     transform: translateX(0%);
+}
+
+.main {
+    max-height: 550px;
+    ;
+    background-color: #292c2f;
+    color: white;
+    font-size: 38pt;
+    text-align: center;
+    line-height: 550px;
+}
+
+footer {
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: black;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 5px 20px;
+    margin-top: 80px;
+}
+
+.footer-copyright {
+    display: flex;
+    width: 100%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-center p a:hover {
+    color: #47b2e4;
+    ;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
 }
